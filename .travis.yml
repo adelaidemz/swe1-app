@@ -10,7 +10,7 @@ before_script:
   - python manage.py migrate
 
 script:
-  - black . --check
+  - black . 
 
 deploy:
   provider: elasticbeanstalk
