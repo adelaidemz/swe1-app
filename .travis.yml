@@ -11,6 +11,7 @@ before_script:
 
 script:
   - black . 
+  - flake8 .
 
 deploy:
   provider: elasticbeanstalk
