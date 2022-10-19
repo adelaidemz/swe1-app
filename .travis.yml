@@ -12,6 +12,10 @@ before_script:
 script:
   - black . 
   - flake8 .
+  - coverage run --source='.' manage.py test polls
+
+after_script:
+  - coveralls
 
 deploy:
   provider: elasticbeanstalk
